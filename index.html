@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Krasnasadyba</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=PT+Serif:ital@1&family=Questrial&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+
+
+    <header class="header">
+        <div class="topnav" id="hg">
+            <div class="d-flex justify-content-between">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="logo" class="header-logo__size" />
+                </div>
+
+
+                <div class="d-flex align-items-center">
+
+                    <ul class="mobile">
+                        <span>+</span>
+                        <a href="#home">Головна</a>
+                        <a href="#rooms">Кімнати</a>
+                        <a href="#rest">Ресторан</a>
+                        <a href="kolyba.html">Колиба</a>
+                        <a href="gallery.html">Галерея</a>
+                        <a href="#contacts">Контакти</a>
+                    </ul>
+                    <span class="hamb">☰</span>
+                    <span class="overlay"></span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- Demo styles -->
+        <style>
+            .content {
+                position: relative;
+                height: 100%;
+            }
+
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 87vh;
+                object-fit: cover;
+            }
+        </style>
+
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text-position">
+                        <div class="slider-title">Красна Садиба</div>
+                        <div class="slider-title__text text">
+                            З нетерпінням чекаємо вас у гості
+                        </div>
+                    </div>
+
+                    <img src="img/main-slider/_O5A7871.jpg" alt="1" />
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-position">
+                        <!-- <div class="slider-title">Slide 2</div>
+                        <div class="slider-title__text text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa.
+                        </div> -->
+                    </div>
+                    <img src="img/main-slider/_O5A7882.jpg" alt="1" />
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-position">
+                        <!-- <div class="slider-title">Slide 3</div>
+                        <div class="slider-title__text text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa.
+                        </div> -->
+                    </div>
+                    <img src="img/main-slider/_O5A7924.jpg" alt="1" />
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-position">
+                        <!-- <div class="slider-title">Slide 4</div>
+                        <div class="slider-title__text text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa.
+                        </div> -->
+                    </div>
+                    <img src="img/main-slider/_O5A7967.jpg" alt="1" />
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-position">
+                        <!-- <div class="slider-title">Slide 5</div>
+                        <div class="slider-title__text text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsa.
+                        </div> -->
+                    </div>
+                    <img src="img/main-slider/_O5A7974.jpg" alt="1" />
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 4500,
+
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    speed: 300,
+                },
+            });
+        </script>
+    </div>
+
+    <h1 class="main-title wow animate__animated animate__bounce">
+        Наша Садиба
+    </h1>
+    <div class="border-h1">
+
+    </div>
+
+    <div class="sadyba-container">
+        <div class="hotel-img">
+            <img src="img/main-slider/IMG_9190.jpg" alt="1" srcset="" class="hotel-picture" />
+        </div>
+        <div class="text-block">
+            <h3 class="second-title">Ми — це:</h3>
+            <div class="second-title__text text">
+                Готель з рестораном та КОЛИБА - або ідеальний відпочинок в Яремче з прекрасним видом на гори та
+                колоритним меню)
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="sadyba-space">
+            <div class="row">
+                <div class="col wow animate__animated animate__backInLeft">
+                    <img src="img/нова серія.jpg" alt="" srcset="" class="hotel-img">
+                </div>
+                <div class="col wow animate__animated animate__backInRight">
+                    <h3 class="second-title">Готель та ресторан</h3>
+                    <div class="second-title__text text">
+                        Готель-ресторан "Красна Садиба" пропонує своїм гостям елегантні номери, обладнані всім
+                        необхідним для комфортного проживання і красивий приватний сад з садової меблями. У
+                        розпорядженні гостей безкоштовний Wi-Fi та телевізори з плоским екраном. У власній
+                        ванній кімнаті безкоштовні халати, тапочки і туалетно-косметичні приналежності. На території
+                        надається безкоштовна приватна парковка.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col wow animate__animated animate__backInLeft">
+                    <h3 class="second-title">Колиба</h3>
+                    <div class="second-title__text text">
+                        Готель-ресторан "Красна Садиба" пропонує своїм гостям елегантні номери, обладнані всім
+                        необхідним для комфортного проживання і красивий приватний сад з садової меблями. У
+                        розпорядженні гостей безкоштовний Wi-Fi та телевізори з плоским екраном. У власній
+                        ванній кімнаті безкоштовні халати, тапочки і туалетно-косметичні приналежності. На території
+                        надається безкоштовна приватна парковка.
+                    </div>
+                </div>
+                <div class="col wow animate__animated animate__backInRight">
+                    <img src="img/нова серія.jpg" alt="" srcset="" class="hotel-img">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="main-title wow animate__animated animate__bounce">
+                Чим ми тішимо гостей?
+            </h1>
+            <div class="border-h1">
+
+            </div>
+            <div class="row service-space">
+                <div class="col">
+
+                    <div class="service-case">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/ico/main-page/006-breakfast-table.svg" alt="" srcset="" class="servise-img">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="servise-text">
+                                Домашніми сніданками з гуцульським колоритом
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="service-case">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/ico/main-page/001-mountain.svg" alt="" srcset="" class="servise-img">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="servise-text">
+                                Видом з вікна на річку та гори
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="service-case">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/ico/main-page/007-gazebo.svg" alt="" srcset="" class="servise-img">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="servise-text">
+                                Просторим подвір‘ям для посиденьок та ігровим дитячим майданчиком
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="service-case">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/ico/main-page/004-hot.svg" alt="" srcset="" class="servise-img">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="servise-text">
+                                Банею на березі річки
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row service-space">
+            <div class="col">
+                <div class="service-case">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ico/main-page/008-.svg" alt="" srcset="" class="servise-img">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="servise-text">
+                            Легким трансфером
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="service-case">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ico/main-page/001-table-etiquette.svg" alt="" srcset="" class="servise-img">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="servise-text">
+                            Фірмовими стравами у ресторані та колибі
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-case">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ico/main-page/004-bed.svg" alt="" srcset="" class="servise-img">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="servise-text">
+                            Чудовим дизайном номерів
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="service-case">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/ico/main-page/002-.svg" alt="" srcset="" class="servise-img">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="servise-text">
+                            Кваліфікованим колективом
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <div class="container story-container">
+        <h1 class="
+    main-title
+    space-for__title
+    wow
+    animate__animated animate__bounce
+  " id="">
+            Наша історія
+        </h1>
+        <div class="border-h1">
+
+        </div>
+        <div class="row">
+            <h3 class="second-title"> Зупиніться, не спішіть. Бо зараз ми, сім’я власників садиби, розкажемо вам
+                історію, яка перенесе на 35
+                років назад...</h3>
+
+
+
+        </div>
+        <div class="row">
+
+            <div class="col">
+                <ul class="btn-list">
+                    <li class="story-btn" id="btn1">Передісторія</li>
+                    <li class="story-btn" id="btn2">Натхнення</li>
+                    <li class="story-btn" id="btn3">Бажання</li>
+                    <li class="story-btn" id="btn4">Розчарування</li>
+                    <li class="story-btn" id="btn5">Енергія</li>
+                    <li class="story-btn" id="btn6">Сьогодення</li>
+                </ul>
+
+            </div>
+
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <div class="story-text" id="text1">
+                        Тоді ми були ще студентами, а «Красна садиба» — закинутим австрійським маєтком 1901 року,
+                        пристосованим
+                        під
+                        продовольчу базу. І ми, звісно, навіть не здогадувались про його існування.
+
+                        Але саме 35 років назад, за часів студентства, сталась наша любов, яка і задала напрямок мріям і
+                        знаковим
+                        подіям. — Ми полюбили туризм і альпінізм. І пройшли тоді безліч маршрутів Карпатами... А після
+                        завершення
+                        університету подалися у одну далеку робочу подорож: на Північ.
+
+                        Хоч ми працювали там 15 років, але все-одно за будь-якої можливості, в кожну відпустку, ми
+                        повертались в
+                        Карпати.
+
+                    </div>
+
+                    <div class="story-text" id="text2">
+                        Десь у ті часи ми полюбили і лижі також — тож вирішили познайомитись з Словацькими Татрами. Саме
+                        там
+                        ми
+                        знайшли для себе місце спокою: затишну приватну садибу «Matushka», де жила, вела господарство і
+                        бізнес
+                        словацька родина.
+
+                        Це була зустріч з мрією. «Matushka» надихнула нас побудувати будиночок в горах для себе і своїх
+                        близьких
+                        —
+                        щоб якомога більше часу проводити в оточенні чудесної природи, свіжого повітря і чистої
+                        карпатської
+                        води. А
+                        ще — щоб розділяти цю радість з іншими сім’ями з дітьми, що обов‘язково би приїжджали до нас на
+                        відпочинок...
+
+                    </div>
+                    <div class="story-text" id="text3">
+                        А знаєте, як буває, коли чогось дуже сильно хочеш від душі?
+                        — Життя підкидає випадок, який все кардинально змінює!
+                        Так сталося і в нас.
+
+                        Одного разу наші друзі сказали:
+
+                        «Іване та Тетяно, в центрі Яремче продається старий будинок на території закинутої продовольчої
+                        бази.
+                        Поїдьте, подивіться».
+
+                    </div>
+                    <div class="story-text" id="text4">
+                        Коли ми вперше потрапили сюди — то нас зачарувало все. Шум ріки. Стіна густого лісу. І звісно —
+                        величність і
+                        архітектура старого австрійського будинку з червоної цегли.
+
+                        Розчаровував лише жахливий стан території: сміття, розвалини старих складів… Розчаровував, але
+                        не
+                        лякав!
+                        Бо
+                        нас як магнітом потягнуло до цього місця. Захотілось вдихнути в нього нове життя — і оселитись
+                        тут.
+
+                    </div>
+                    <div class="story-text" id="text5">
+                        В той день ми запрошували із собою жінку-біоенергетика — і вона сказала:
+                        «Це місце освячене Богом! Тут люди будуть відпочивати душею і тілом...» З цих слів усе і
+                        розпочалось. Ми
+                        залишили Північ, повернулись додому в Україну — і зайнялися «Красною садибою» (красною — тобто
+                        красивою).
+
+                    </div>
+                    <div class="story-text" id="text6">
+                        Це було у 2000-х…
+                        А тепер перенесемося до наших часів. Там теж траплялись дива.
+
+                        Наприклад, 2-3 роки назад до нас завітав неочікуваний гість — правнук австрійського пана,
+                        колишнього
+                        власника цього маєтку. Т до сліз був радий і зворушений, що місце, в якому ріс його дід та
+                        батько,
+                        збереглось і прикрасилось. Що тут вирує життя і відпочивають люди зі всього світу.
+
+                        А ще, кілька пар, які у нас відпочивали, якось нам розповіли: вони довго не могли стати
+                        батьками.
+                        Але в
+                        них
+                        з’явились малюки саме після відпочинку у «Красній садибі».
+
+                        Здається, для таких моментів ми 20 років назад і відродили садибу.
+
+                        Ми тут живемо, працюємо, робимо усе можливе, щоб люди, які до нас приїжджають, відпочивали тілом
+                        і
+                        душею.
+                        Тут виросла наша донька Анна, яка продовжує і успішно розвиває сімейний бізнес. Тут ростуть наші
+                        онуки,
+                        і ми
+                        сподіваємось, що вони не припинять любити це чарівне місце.
+
+                        Бо «Красна Садиба» — це наша любов з юності.
+                        Це мрія, яка збулася.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms -->
+
+    <h1 class="
+        main-title
+        space-for__title
+        wow
+        animate__animated animate__bounce
+      " id="rooms">
+        Кімнати
+    </h1>
+    <div class="border-h1">
+
+    </div>
+
+
+    <div class="container">
+        <!-- Luxe -->
+
+        <div class="row room-interval">
+            <div class="col wow animate__animated animate__backInLeft">
+                <a href="rooms/luxe1/luxe1.html">
+                    <img src="img/luxe/IMG_8802.jpg" alt="" srcset="" class="room-img" />
+                </a>
+            </div>
+            <div class="col wow animate__animated animate__backInRight">
+                <div class="room-text__case">
+                    <h3 class="second-title">Люкс у дерев'яному корпусі</h3>
+                    <div class="second-title__text text">
+                        Двокімнатні номери категорії «Люкс» у готелі «Красна Садиба» це просторі, зручні, гарно
+                        декоровані номери, оформлені у світлих пастельних тонах – усе, що потрібно для комфортного
+                        відпочинку. Дві просторі, залиті сонцем кімнати, вишуканий інтер’єр та сучасне
+                        технічне оснащення номеру дають відчуття цілковитого спокою та затишку.
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <form action="rooms/luxe1/luxe1.html" target="_blank" class="btn-interval">
+                            <button class="room-btn">Детальніше</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- half-luxe -->
+
+        <div class="row room-interval">
+            <div class="col wow animate__animated animate__backInLeft room-interval">
+                <div class="room-text__case">
+                    <h3 class="second-title">Напівлюкс у дерев'яному корпусі</h3>
+                    <div class="second-title__text text">
+                        Готель «Красна Садиба» – це територія затишку, комфорту, витонченості та приємного відпочинку.
+                        Ви відпочиваєте, а ми робимо Ваш відпочинок максимально приємним та комфортним. Номери категорії
+                        «Напівлюкс» – великі та зручні, передбачають простору спальню
+                        з великим двоспальним ліжком, коридор, ванну кімнату та робоче місце.
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <form action="rooms/half-luxe1/11.html" target="_blank" class="btn-interval">
+                            <button class="room-btn">Детальніше</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col wow animate__animated animate__backInRight">
+                <a href="rooms/half-luxe1/11.html">
+                    <img src="img/half-luxe/16/IMG_9053.jpg" alt="" srcset="" class="room-img" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Luxe2 -->
+
+        <d iv class="row room-interval">
+            <div class="col wow animate__animated animate__backInLeft">
+                <a href="rooms/luxe2/3.html">
+                    <img src="img/luxe2/4/нова серія-8.jpg" alt="" srcset="" class="room-img" />
+                </a>
+            </div>
+            <div class="col wow animate__animated animate__backInRight">
+                <div class="room-text__case">
+                    <h3 class="second-title">Люкс у цегляному корпусі</h3>
+                    <div class="second-title__text text">
+                        Двокімнатні номери категорії «Люкс» у готелі «Красна Садиба» це просторі, зручні, гарно
+                        декоровані номери, оформлені у світлих пастельних тонах – усе, що потрібно для комфортного
+                        відпочинку. Дві просторі, залиті сонцем кімнати, вишуканий інтер’єр та сучасне
+                        технічне оснащення номеру дають відчуття цілковитого спокою та затишку.
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <form action="rooms/luxe2/3.html" target="_blank" class="btn-interval">
+                            <button class="room-btn">Детальніше</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- half-luxe2 -->
+
+    <div class="row room-interval">
+        <div class="col wow animate__animated animate__backInLeft">
+            <div class="room-text__case">
+                <h3 class="second-title">Напівлюкс у цегляному корпусі</h3>
+                <div class="second-title__text text">
+                    Готель «Красна Садиба» – це територія затишку, комфорту, витонченості та приємного відпочинку.
+                    Ви відпочиваєте, а ми робимо Ваш відпочинок максимально приємним та комфортним. Номери категорії
+                    «Напівлюкс» – великі та зручні, передбачають простору спальню
+                    з великим двоспальним ліжком, коридор, ванну кімнату та робоче місце.
+                </div>
+                <div class="d-flex justify-content-center">
+                    <form action="rooms/half-luxe2/1.html" target="_blank" class="btn-interval">
+                        <button class="room-btn">Детальніше</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__backInRight">
+            <a href="rooms/half-luxe2/1.html">
+                <img src="img/half-luxe2/7/нова серія-10.jpg" alt="" srcset="" class="room-img" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Econom -->
+
+    <div class="row room-interval">
+        <div class="col wow animate__animated animate__backInLeft">
+            <a href="rooms/econom/5.html">
+
+                <img src="img/econom/9/нова серія-2.jpg" alt="" srcset="" class="room-img" />
+            </a>
+        </div>
+
+
+        <div class="col wow animate__animated animate__backInRight">
+            <div class="room-text__case">
+                <h3 class="second-title">Економ у цегляному корпусі</h3>
+                <div class="second-title__text text">
+                    Вишукані та затишні номери категорії «Економ» – ідеальний варіант для гостей, які надають
+                    перевагу комфорту та зручності! В кожному номері є спальня з двоспальним ліжком, або двома
+                    окремими ліжками, коридор, ванна кімната та робоче місце. Номери категорії
+                    «Економ» обладнані усіма необхідними меблями та технікою.
+                </div>
+                <div class="d-flex justify-content-center">
+                    <form action="rooms/econom/5.html" target="_blank" class="btn-interval">
+                        <button class="room-btn">Детальніше</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <h1 class="main-title wow animate__animated animate__bounce" id="rest">
+        Ресторан
+    </h1>
+    <div class="border-h1">
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="second-title__text text">
+                Наш ресторан надає кожному клієнтові:
+            </div>
+            <div class="col">
+                <img src="img/menu/IMG_8085.JPG" alt="" srcset="" class="menu-img">
+                <div class="second-title__text text">
+                    Великий вибір страв
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/menu/162a5913bef8433c291d790fd9edd253.jpg" alt="" srcset="" class="menu-img">
+                <div class="second-title__text text">
+                    Вишукані напої
+                </div>
+            </div>
+            <div class="col">
+
+                <img src="img/menu/e5319685608c95d4cafeefcb30c15448.jpg" alt="" srcset="" class="menu-img">
+                <div class="second-title__text text">
+                    Смачні десерти
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <h3 class="second-title">Меню</h3>
+
+            <div class="d-flex justify-content-center ">
+                <div class="fotorama">
+                    <img src="img/menu2/1.jpg">
+                    <img src="img/menu2/2.jpg">
+                    <img src="img/menu2/3.jpg">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <h1 class="main-title wow animate__animated animate__bounce" id="contacts">
+        Контакти
+    </h1>
+    <div class="border-h1">
+
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <ul>
+                    <div class="d-flex justify-content-center">
+
+                        <li class="time text">
+                            Колиба - Пн. 14:00-00:00
+                        </li>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <li class="time">
+                            Вт.-Нд. - 11:00-00:00
+                        </li>
+
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <li class="time text">
+                            Готель - цілодобово.
+                        </li>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <li class="time">
+                            Заселення з 14:00. Виселення до 12:00
+                        </li>
+                    </div>
+                </ul>
+
+
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <ul>
+                        <div class="d-flex justify-content-center">
+                            <li class="time text">
+                                Колиба над річкою та ресторан:
+                            </li>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <li class="time">
+                                050 172 86 87
+                            </li>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <li class="time text">
+                                Номери зі сніданками:
+                            </li>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <li class="time">
+                                095 301 50 40
+                            </li>
+                        </div>
+                </div>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="row">
+        <div class="contacts-container"> -->
+        <div class="row">
+
+            <h3 class="second-title">
+                З'явилися запитання?
+            </h3>
+
+        </div>
+        <div class="contact-block contact-bg">
+
+            <form action="../telegram.php" method="POST" class="">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control1  style-form" id="" name="user_name"
+                                placeholder="Ваше ім'я">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control1  style-form" id="" name="user_phone"
+                                placeholder="Номер телефону">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+
+                        <input type="text" class="form-control1  style-form" id="" name="user_message"
+                            placeholder="Ваше повідомлення">
+
+                    </div>
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="room-btn space-btn">Відправити</button>
+                </div>
+            </form>
+        </div>
+        <!-- </div>
+    </div> -->
+
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="footer-title">Де ми знаходимося?</h3>
+                    </div>
+                    <a href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0+%D1%81%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0/@48.4439796,24.553002,15z/data=!4m8!3m7!1s0x0:0x1aecc55c30a3e406!5m2!4m1!1i2!8m2!3d48.4439796!4d24.553002"
+                        class="footer-text">вулиця Володимира Івасюка, 6, Яремче, Івано-Франківська область,
+                        78500</a>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/logo.png" alt="logo" class="header-logo__size footer-logo" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="footer-title">Ми у соцмережах</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+
+                        <a href="https://www.facebook.com/krasnasadyba/" class="footer-link">
+                            <img src="img/footer-facebook.svg" alt="" class="footer-svg">
+                        </a>
+                        <a href="https://www.instagram.com/krasnasadyba/" class="footer-link">
+                            <img src="img/footer-insta.svg" alt="" class="footer-svg">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="pol">Умови та загальні положення </a>
+                        <a href="" class="pol">Політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
