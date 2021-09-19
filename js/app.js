@@ -1,4 +1,13 @@
-new WOW().init();
+// new WOW().init();
+
+wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 0,
+  mobile: false,
+  live: true
+})
+wow.init();
 
 $(".fotorama").fotorama({
   spinner: {
@@ -26,17 +35,7 @@ $(function () {
 const textActives = document.querySelectorAll(".story-text");
 const textButtons = document.querySelectorAll(".story-btn");
 
-// function activator() {
-//   for (textActive of textActives) {
-//     textActive.classList.add("active");
-//   }
-// }
 
-// for (textButton of textButtons) {
-//   textButton.addEventListener("click", activator);
-// }
-
-// console.log(textActives);
 
 const test1 = document.getElementById("btn1");
 const test2 = document.getElementById("btn2");
